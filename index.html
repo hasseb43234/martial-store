@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MARTIAL | Best Sports & Performance Apparel Brand</title>
+  <meta name="description" content="Martial Clothing & Performance Apparel. Explore our premium collections of Team Uniforms, Jackets, Casual Wear, Fitness Apparel, Sublimation Sportswear and Accessories.">
+  <link rel="icon" href="https://charcoal.com.pk/cdn/shop/files/favicon.png?v=1613556833&width=96" type="image/png">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Custom Charcoal Theme Styles -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       TOP ANNOUNCEMENT BAR (CHARCOAL STYLE)
+       ========================================================================== -->
+  <aside class="announcement-bar" aria-label="Store Announcement">
+    <div class="announcement-slider" id="announcementSlider">
+      <div class="announcement-item">
+        <i class="fas fa-check-circle"></i> Price checked on eBay UK &amp; Amazon &bull; Free delivery on orders over <span class="highlight">£35.00</span>
+      </div>
+    </div>
+    <button class="currency-toggle-btn" id="currencyToggleBtn" style="position: absolute; right: 20px; color: #fff; background: rgba(255,255,255,0.18); border: 1px solid rgba(255,255,255,0.3); padding: 3px 12px; font-size: 0.72rem; font-weight: 700; cursor: pointer; display: flex; align-items: center; gap: 6px; text-transform: uppercase;">
+      <i class="fas fa-coins"></i> Currency: <strong>£ GBP</strong>
+    </button>
+  </aside>
+
+  <!-- ==========================================================================
+       MAIN STICKY HEADER & MEGA MENU
+       ========================================================================== -->
+  <header class="site-header">
+    <div class="site-container-fluid">
+      <div class="header-inner">
+        
+        <!-- Left: Mobile Toggle & Desktop Nav -->
+        <div class="header-left">
+          <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+          </button>
+          
+          <!-- Brand Logo -->
+          <a href="#" class="brand-logo">
+            <span class="brand-logo-text">MARTIAL</span>
+            <span class="brand-tagline">MARTIAL ATHLETICS</span>
+          </a>
+        </div>
+
+        <!-- Center: Desktop Navigation with Mega Menu -->
+        <nav class="desktop-nav" aria-label="Main Navigation">
+          <ul class="nav-list" id="megaMenuWrapper">
+            <!-- Populated dynamically with all Wellstuff categories & subcategories -->
+          </ul>
+        </nav>
+
+        <!-- Right: Utility Actions (Search, B2B, Wishlist, Cart) -->
+        <div class="header-right">
+          <button class="b2b-quote-btn" id="b2bQuoteTrigger">
+            <i class="fas fa-tshirt"></i> Custom Kit
+          </button>
+          
+          <div class="header-actions">
+            <!-- Search -->
+            <button class="action-btn" id="searchTrigger" title="Search catalog">
+              <i class="fas fa-search"></i>
+            </button>
+
+            <!-- Wishlist -->
+            <button class="action-btn" id="wishlistBtn" title="Wishlist">
+              <i class="far fa-heart"></i>
+              <span class="action-badge" id="wishlistBadge">0</span>
+            </button>
+
+            <!-- Cart Drawer Trigger -->
+            <button class="action-btn" id="cartBtn" title="Shopping Bag">
+              <i class="fas fa-shopping-bag"></i>
+              <span class="action-badge" id="cartBadge">0</span>
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       HERO BANNER CAROUSEL
+       ========================================================================== -->
+  <section class="hero-slider-section" aria-label="Featured Campaigns">
+    <!-- Slide 1: Team Uniforms & Sportswear -->
+    <div class="hero-slide active" style="background-image: url('https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=1920&q=85');">
+      <div class="hero-slide-overlay"></div>
+      <div class="site-container">
+        <div class="hero-content">
+          <span class="hero-subtitle">Pro Athletic Performance</span>
+          <h1 class="hero-title">Custom Team Uniforms &amp; Club Apparel</h1>
+          <p class="hero-desc">Engineered for endurance and precision. Custom soccer, basketball, tackle, baseball, and hockey kits with advanced moisture-wicking fabrication.</p>
+          <div class="hero-btn-group">
+            <a href="#catalog" class="btn-primary">Shop Collection <i class="fas fa-arrow-right"></i></a>
+            <button class="btn-outline open-b2b-modal">Request Custom Kit Design</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 2: Winter Jackets & Outerwear -->
+    <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1544441893-675973e31985?auto=format&fit=crop&w=1920&q=85');">
+      <div class="hero-slide-overlay"></div>
+      <div class="site-container">
+        <div class="hero-content">
+          <span class="hero-subtitle">Martial Outerwear Edition</span>
+          <h2 class="hero-title">Puffer, Varsity &amp; Bomber Jackets</h2>
+          <p class="hero-desc">Defy the elements in luxury style. Premium insulated puffer jackets, fleece varsity, softshell windbreakers, and genuine leather outerwear.</p>
+          <div class="hero-btn-group">
+            <a href="#catalog" class="btn-primary">Discover Jackets <i class="fas fa-arrow-right"></i></a>
+            <a href="#catalog" class="btn-outline">View Lookbook</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 3: Casual & Sublimation -->
+    <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=1920&q=85');">
+      <div class="hero-slide-overlay"></div>
+      <div class="site-container">
+        <div class="hero-content">
+          <span class="hero-subtitle">Modern Everyday Fits</span>
+          <h2 class="hero-title">Sublimation &amp; Casual Luxury</h2>
+          <p class="hero-desc">Vibrant all-over digital print hoodies, gym tees, sweatpants, and tracksuits tailored for ultimate lifestyle comfort and athletic performance.</p>
+          <div class="hero-btn-group">
+            <a href="#catalog" class="btn-primary">Explore Casuals <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hero Navigation Arrows -->
+    <div class="hero-arrows">
+      <button class="hero-arrow-btn" id="heroPrevBtn" aria-label="Previous Slide"><i class="fas fa-chevron-left"></i></button>
+      <button class="hero-arrow-btn" id="heroNextBtn" aria-label="Next Slide"><i class="fas fa-chevron-right"></i></button>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       VALUE PROPOSITIONS STRIP
+       ========================================================================== -->
+  <section class="features-strip">
+    <div class="site-container">
+      <div class="features-grid">
+        
+        <div class="feature-box">
+          <div class="feature-icon"><i class="fas fa-truck-fast"></i></div>
+          <div class="feature-info">
+            <h5>Free Nationwide Delivery</h5>
+            <p>On all domestic orders over Rs. 3,000</p>
+          </div>
+        </div>
+
+        <div class="feature-box">
+          <div class="feature-icon"><i class="fas fa-medal"></i></div>
+          <div class="feature-info">
+            <h5>Manufacturer Direct</h5>
+            <p>Sialkot craftsmanship &amp; premium fabric</p>
+          </div>
+        </div>
+
+        <div class="feature-box">
+          <div class="feature-icon"><i class="fas fa-rotate-left"></i></div>
+          <div class="feature-info">
+            <h5>14-Day Easy Exchange</h5>
+            <p>Hassle-free size replacement policy</p>
+          </div>
+        </div>
+
+        <div class="feature-box">
+          <div class="feature-icon"><i class="fas fa-headset"></i></div>
+          <div class="feature-info">
+            <h5>Custom Kit Support</h5>
+            <p>Dedicated team uniform design specialists</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       CATEGORY SPOTLIGHT CARDS ("SHOP BY CATEGORY")
+       ========================================================================== -->
+  <section class="category-spotlight-section">
+    <div class="site-container">
+      <div class="section-title-wrap">
+        <span class="section-tagline">Curated Catalog</span>
+        <h2 class="section-main-heading">Shop By Category</h2>
+      </div>
+
+      <div class="category-grid" id="categoryGrid">
+        <!-- Injected via JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       MAIN SHOP CATALOG & FILTERABLE COLLECTION
+       ========================================================================== -->
+  <section class="catalog-section" id="catalog">
+    <div class="site-container">
+      
+      <!-- Showcase Tabs -->
+      <div class="tabs-nav">
+        <button class="tab-btn active" data-tab="trending">Trending Now</button>
+        <button class="tab-btn" data-tab="new">New Arrivals</button>
+        <button class="tab-btn" data-tab="best">Best Sellers</button>
+        <button class="tab-btn" data-tab="sale">On Sale &amp; Clearance</button>
+      </div>
+
+      <div class="catalog-layout">
+        
+        <!-- Left: Filters Sidebar -->
+        <aside class="catalog-sidebar">
+          <div class="sidebar-header">
+            <span class="sidebar-title"><i class="fas fa-sliders-h"></i> Filters</span>
+            <button class="clear-filters-btn" id="clearFiltersBtn">Reset All</button>
+          </div>
+
+          <!-- Categories Filter -->
+          <div class="filter-group">
+            <div class="filter-group-title">
+              <span>Categories</span>
+              <i class="fas fa-chevron-down" style="font-size: 0.7rem;"></i>
+            </div>
+            <ul class="filter-list" id="sidebarCategoryList">
+              <!-- Dynamically populated -->
+            </ul>
+          </div>
+
+          <!-- Price Range Filter -->
+          <div class="filter-group">
+            <div class="filter-group-title">
+              <span>Price Range (£ GBP)</span>
+            </div>
+            <div class="price-range-inputs">
+              <input type="number" class="price-input" id="priceMinInput" placeholder="Min (£)">
+              <span>-</span>
+              <input type="number" class="price-input" id="priceMaxInput" placeholder="Max (£)">
+            </div>
+          </div>
+
+          <!-- Quick Promo Banner -->
+          <div style="background: #111; color: #fff; padding: 20px; text-align: center; margin-top: 24px;">
+            <span style="font-size: 0.68rem; letter-spacing: 0.15em; color: var(--color-accent-gold); font-weight: 700; text-transform: uppercase;">Limited Offer</span>
+            <h4 style="font-family: var(--font-heading); font-size: 1rem; margin: 8px 0;">EXTRA 10% OFF</h4>
+            <p style="font-size: 0.75rem; color: #bbb; margin-bottom: 12px;">Use code at cart checkout:</p>
+            <div style="background: #222; border: 1px dashed var(--color-accent-gold); padding: 6px; font-weight: 700; font-size: 0.85rem; letter-spacing: 0.1em; color: var(--color-accent-gold);">
+              MARTIAL10
+            </div>
+          </div>
+        </aside>
+
+        <!-- Right: Catalog Main Area -->
+        <div class="catalog-main">
+          
+          <div class="catalog-toolbar">
+            <div class="results-count" id="resultsCount">
+              Loading catalog...
+            </div>
+
+            <div class="catalog-sort">
+              <label for="sortSelect">Sort By:</label>
+              <select class="sort-select" id="sortSelect">
+                <option value="featured">Featured Picks</option>
+                <option value="newest">Newest Additions</option>
+                <option value="price-asc">Price: Low to High</option>
+                <option value="price-desc">Price: High to Low</option>
+                <option value="rating">Customer Rating</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Product Grid -->
+          <div class="products-grid" id="productsGrid">
+            <!-- Populated with Wellstuff products -->
+          </div>
+
+          <!-- Load More Button -->
+          <div class="load-more-wrap" id="loadMoreWrapper">
+            <button class="btn-load-more" id="loadMoreBtn">
+              Load More Products <i class="fas fa-chevron-down" style="font-size: 0.75rem; margin-left: 6px;"></i>
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       CHARCOAL EDITORIAL / LOOKBOOK
+       ========================================================================== -->
+  <section class="editorial-section">
+    <div class="site-container">
+      <div class="editorial-layout">
+        <div class="editorial-image-collage">
+          <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=800&q=80" alt="Athletic editorial" class="editorial-img-main">
+          <img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=800&q=80" alt="Casual editorial" class="editorial-img-sub">
+        </div>
+        <div class="editorial-content">
+          <span class="editorial-tagline">Craftsmanship &amp; Heritage</span>
+          <h2 class="editorial-title">Engineered For Champions. Styled For Living.</h2>
+          <p class="editorial-desc">
+            At the intersection of Martial's refined tailoring and Wellstuff Industries' world-renowned sports apparel manufacturing, we deliver apparel built without compromise. From reinforced stitching in rugby and tackle jerseys to breathable micro-fibers in gym wear, every thread represents Pakistani craftsmanship at its finest.
+          </p>
+          <div class="hero-btn-group">
+            <a href="#catalog" class="btn-primary">View Collection</a>
+            <button class="btn-outline open-b2b-modal">B2B Wholesale Inquiries</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       CUSTOM MANUFACTURING & GRAPHIC DESIGN (WELLSTUFF SIGNATURE FEATURE)
+       ========================================================================== -->
+  <section class="custom-manufacturing-section">
+    <div class="site-container">
+      <div class="custom-box-inner">
+        <div>
+          <span class="section-tagline">Custom Teamwear Manufacturing</span>
+          <h2 class="section-main-heading" style="text-align: left; margin-bottom: 14px;">Free Graphic Design &amp; Custom Team Kits</h2>
+          <p style="font-size: 0.85rem; color: var(--color-text-muted); line-height: 1.7;">
+            Need customized apparel for your school, academy, club, or corporate organization? Wellstuff Industries specializes in custom cut-and-sew uniforms, 3D sublimation, embroidery patches, and bespoke club wear.
+          </p>
+
+          <div class="custom-step-list">
+            <div class="custom-step-item">
+              <div class="step-num">1</div>
+              <div class="step-text">
+                <h6>Submit Your Artwork &amp; Colors</h6>
+                <p>Upload your team crest, sponsor logos, or describe your desired color theme.</p>
+              </div>
+            </div>
+            <div class="custom-step-item">
+              <div class="step-num">2</div>
+              <div class="step-text">
+                <h6>Free 3D Mockup &amp; Pre-Production Sample</h6>
+                <p>Our design team creates a 3D digital rendering within 24 hours.</p>
+              </div>
+            </div>
+            <div class="custom-step-item">
+              <div class="step-num">3</div>
+              <div class="step-text">
+                <h6>Rapid Manufacturing &amp; Global Delivery</h6>
+                <p>Direct from our Sialkot factory to your doorstep with full quality assurance.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="custom-form-wrap">
+          <h4>Request Free Custom Quote</h4>
+          <form id="inlineCustomQuoteForm">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Full Name *" required>
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Team / Club / Organization *" required>
+            </div>
+            <div class="form-group">
+              <input type="email" class="form-control" placeholder="Email Address *" required>
+            </div>
+            <div class="form-group">
+              <input type="tel" class="form-control" placeholder="WhatsApp / Phone Number *" required>
+            </div>
+            <div class="form-group">
+              <select class="form-control" required>
+                <option value="">Select Sport or Garment Type</option>
+                <option value="Team Uniforms">Team Uniforms (Soccer, Basketball, Rugby, etc.)</option>
+                <option value="Casual Wear">Casual Hoodies &amp; Polos</option>
+                <option value="Jackets">Winter Jackets &amp; Outerwear</option>
+                <option value="Sublimation">Sublimation Garments</option>
+                <option value="Work Wear">Industrial &amp; Work Wear</option>
+                <option value="Accessories">Caps &amp; Badges</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" rows="2" placeholder="Quantity, Sizes, or Design notes..."></textarea>
+            </div>
+            <button type="submit" class="btn-primary" style="width: 100%; justify-content: center;">Submit Quote Request</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       CUSTOMER REVIEWS & TRUST (JUDGE.ME STYLE)
+       ========================================================================== -->
+  <section class="reviews-section">
+    <div class="site-container">
+      <div class="review-badge-header">
+        <div class="judgeme-stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <div class="judgeme-score">Rated 4.9 / 5 Stars based on 1,480+ Reviews</div>
+      </div>
+
+      <div class="reviews-grid">
+        <div class="review-card">
+          <div>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <h4 class="review-title">Exceptional Fabric &amp; Pro Stitching</h4>
+            <p class="review-body">“We ordered customized rugby and soccer kits for our college tournament. The sublimation colors came out vivid and the breathable polyester held up through rigorous matches. Truly Martial quality.”</p>
+          </div>
+          <div class="review-author">
+            <i class="fas fa-check-circle verified-icon"></i>
+            <span class="author-name">Usman Tariq &mdash; Lahore FC</span>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <h4 class="review-title">Puffer Jacket is Top-Tier Warmth</h4>
+            <p class="review-body">“Purchased the Martial Puffer Jacket and two casual polos. Fast 3-day delivery to Islamabad. Fits true to size and the attention to inner lining and zips is top tier.”</p>
+          </div>
+          <div class="review-author">
+            <i class="fas fa-check-circle verified-icon"></i>
+            <span class="author-name">Hamza Malik &mdash; Islamabad</span>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <h4 class="review-title">Great Wholesale Bulk Pricing</h4>
+            <p class="review-body">“Wellstuff manufacturing combined with Martial e-commerce makes ordering club tracksuits seamless. The mockups were provided same day and delivered on time.”</p>
+          </div>
+          <div class="review-author">
+            <i class="fas fa-check-circle verified-icon"></i>
+            <span class="author-name">Zainab Raza &mdash; Karachi Gym Club</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       FOOTER (CHARCOAL REPLICA)
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="site-container">
+      <div class="footer-top">
+        
+        <!-- About & Manifesto -->
+        <div class="footer-col">
+          <div class="brand-logo" style="margin-bottom: 16px;">
+            <span class="brand-logo-text">MARTIAL</span>
+            <span class="brand-tagline">MARTIAL ATHLETICS</span>
+          </div>
+          <p>
+            Martial Clothing is Pakistan's premier apparel brand, offering performance team uniforms, tailored casual wear, outerwear, and custom sublimation manufactured in Sialkot, Pakistan.
+          </p>
+          <ul class="footer-contact-info">
+            <li><i class="fas fa-map-marker-alt"></i> Beside KFC, Wazirabad Road, Noul More, Sialkot, Pakistan</li>
+            <li><i class="fas fa-envelope"></i> customercare@martial.com.pk</li>
+            <li><i class="fas fa-phone"></i> +92 52 3555100 / +92 346 8600006</li>
+          </ul>
+          <div class="footer-socials">
+            <a href="https://www.facebook.com/charcoal.officialpage" class="social-link" target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/charcoal.official/" class="social-link" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+            <a href="https://pk.linkedin.com/company/charcoal-clothing-men" class="social-link" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://api.whatsapp.com/send/?phone=923468600006" class="social-link" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-col">
+          <h4>Customer Care</h4>
+          <ul class="footer-links">
+            <li><a href="#catalog">Shop All Catalog</a></li>
+            <li><a href="#" class="open-b2b-modal">Request Custom Kit Quote</a></li>
+            <li><a href="#">Track Your Shipment</a></li>
+            <li><a href="#">Size &amp; Fabric Guide</a></li>
+            <li><a href="#">Exchange &amp; Return Policy</a></li>
+            <li><a href="#">Store Locator (Lahore, Karachi, Islamabad)</a></li>
+          </ul>
+        </div>
+
+        <!-- Categories -->
+        <div class="footer-col">
+          <h4>Categories</h4>
+          <ul class="footer-links">
+            <li><a href="#catalog" data-category="Team Uniforms">Team Uniforms</a></li>
+            <li><a href="#catalog" data-category="Casual Wear">Casual Wear</a></li>
+            <li><a href="#catalog" data-category="Jackets">Jackets &amp; Outerwear</a></li>
+            <li><a href="#catalog" data-category="Fitness Wear">Fitness Wear</a></li>
+            <li><a href="#catalog" data-category="Sublimation Garments">Sublimation Garments</a></li>
+            <li><a href="#catalog" data-category="Work Wear">Work Wear</a></li>
+            <li><a href="#catalog" data-category="Accessories">Accessories</a></li>
+          </ul>
+        </div>
+
+        <!-- Newsletter & Insiders -->
+        <div class="footer-col">
+          <h4>Martial Insider</h4>
+          <p>Subscribe to receive exclusive access to clearance drops, VIP discount codes, and teamwear updates.</p>
+          <form class="newsletter-form" id="newsletterForm">
+            <input type="email" class="newsletter-input" placeholder="Enter your email address..." required>
+            <button type="submit" class="newsletter-btn">Join</button>
+          </form>
+          <div style="margin-top: 20px;">
+            <span style="font-size: 0.72rem; color: #999; display: block; margin-bottom: 6px;">STORE LOCATIONS:</span>
+            <span style="font-size: 0.78rem; font-weight: 600; color: #444;">Lahore &bull; Karachi &bull; Islamabad &bull; Sialkot &bull; Rawalpindi &bull; Faisalabad</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <div>&copy; 2026 MARTIAL Clothing &amp; Wellstuff Industries. All rights reserved.</div>
+        <div class="payment-icons">
+          <i class="fab fa-cc-visa" title="Visa"></i>
+          <i class="fab fa-cc-mastercard" title="Mastercard"></i>
+          <i class="fas fa-money-bill-wave" title="Cash on Delivery"></i>
+          <i class="fas fa-shield-alt" title="100% Secure Checkout"></i>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       SLIDE-OVER CART DRAWER
+       ========================================================================== -->
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping Cart">
+    <div class="drawer-header">
+      <h3 class="drawer-title">Shopping Bag</h3>
+      <button class="drawer-close-btn" id="cartDrawerClose" aria-label="Close cart">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+
+    <!-- Free Delivery Progress Bar -->
+    <div class="shipping-meter-wrap">
+      <div class="shipping-meter-text" id="shippingMeterText">
+        Add items to unlock <strong>FREE Delivery</strong>
+      </div>
+      <div class="shipping-meter-bar">
+        <div class="shipping-meter-progress" id="shippingProgress"></div>
+      </div>
+    </div>
+
+    <!-- Cart Items List -->
+    <div class="cart-items-list" id="cartItemsList">
+      <!-- Populated via JavaScript -->
+    </div>
+
+    <!-- Drawer Footer -->
+    <div class="drawer-footer">
+      <div class="coupon-row">
+        <input type="text" class="coupon-input" id="couponInput" placeholder="PROMO CODE (e.g. MARTIAL10)">
+        <button class="coupon-btn" id="applyCouponBtn">Apply</button>
+      </div>
+
+      <div class="subtotal-row">
+        <span>Subtotal:</span>
+        <span id="cartSubtotal">Rs. 0</span>
+      </div>
+
+      <button class="btn-checkout" id="checkoutBtn">
+        Proceed To Checkout <i class="fas fa-arrow-right"></i>
+      </button>
+    </div>
+  </aside>
+
+  <!-- ==========================================================================
+       MOBILE NAVIGATION DRAWER
+       ========================================================================== -->
+  <aside class="mobile-nav-drawer" id="mobileNavDrawer" aria-label="Mobile Navigation">
+    <div class="mobile-drawer-header">
+      <span class="brand-logo-text" style="font-size: 1.2rem;">MARTIAL</span>
+      <button class="drawer-close-btn" id="mobileDrawerClose"><i class="fas fa-times"></i></button>
+    </div>
+    <ul class="mobile-nav-list" id="mobileNavList">
+      <!-- Injected dynamically -->
+    </ul>
+  </aside>
+
+  <!-- ==========================================================================
+       PREDICTIVE LIVE SEARCH MODAL
+       ========================================================================== -->
+  <div class="search-modal" id="searchModal">
+    <button class="search-close-btn" id="searchCloseBtn" aria-label="Close search"><i class="fas fa-times"></i></button>
+    <div class="search-modal-inner">
+      <div class="search-input-wrap">
+        <input type="text" class="search-input" id="searchInput" placeholder="Search 612 products by name, category, or code (e.g. CTS-101)...">
+      </div>
+      <h5 id="searchStatusText" style="color: var(--color-text-muted); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 16px;">
+        Popular Trending Styles:
+      </h5>
+      <div class="search-results-grid" id="searchResultsGrid">
+        <!-- Live search matches -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       PRODUCT QUICK VIEW MODAL
+       ========================================================================== -->
+  <div class="modal-overlay" id="quickViewModal">
+    <div class="quickview-card">
+      <button class="modal-close-btn" id="quickViewCloseBtn" aria-label="Close modal"><i class="fas fa-times"></i></button>
+      
+      <!-- Gallery Column -->
+      <div class="qv-gallery">
+        <img src="" alt="" class="qv-main-img" id="qvMainImg">
+        <div class="qv-thumbs" id="qvThumbs"></div>
+      </div>
+
+      <!-- Product Details Column -->
+      <div class="qv-details">
+        <span class="qv-code" id="qvCode"></span>
+        <h2 class="qv-title" id="qvTitle"></h2>
+        
+        <div class="qv-prices">
+          <span class="qv-sale-price" id="qvSalePrice"></span>
+          <span class="qv-regular-price" id="qvRegularPrice"></span>
+          <span class="qv-discount-tag" id="qvDiscountBadge"></span>
+        </div>
+
+        <!-- Live eBay & Amazon Market Price Comparison Box -->
+        <div id="qvMarketBox"></div>
+
+        <div class="product-rating" id="qvRatingStars" style="margin-bottom: 16px;"></div>
+
+        <div style="font-size: 0.8rem; color: #555; margin-bottom: 16px; line-height: 1.5;" id="qvFabric"></div>
+
+        <!-- Color Selection -->
+        <div style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; margin-bottom: 6px;">Available Colors:</div>
+        <div class="qv-pill-list" id="qvColors"></div>
+
+        <!-- Size Selection -->
+        <div style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; margin-bottom: 6px;">Select Size:</div>
+        <div class="qv-pill-list" id="qvSizes"></div>
+
+        <!-- Quantity & Add to Cart -->
+        <div style="display: flex; gap: 12px; align-items: center; margin-top: 14px;">
+          <div class="qty-control" style="height: 44px;">
+            <button class="qty-btn" id="qvQtyMinus" style="width: 36px; height: 100%;"><i class="fas fa-minus"></i></button>
+            <input type="text" id="qvQtyInput" value="1" readonly style="width: 40px; text-align: center; border: none; font-weight: 700;">
+            <button class="qty-btn" id="qvQtyPlus" style="width: 36px; height: 100%;"><i class="fas fa-plus"></i></button>
+          </div>
+          <button class="btn-primary" id="qvAddToCartBtn" style="flex: 1; justify-content: center; height: 44px;">
+            <i class="fas fa-shopping-bag"></i> Add To Bag
+          </button>
+        </div>
+
+        <button class="btn-outline" id="qvCustomQuoteBtn" style="color: var(--color-primary); border-color: var(--color-primary); margin-top: 12px; justify-content: center; font-size: 0.75rem;">
+          <i class="fas fa-users"></i> Inquire For Club / Bulk Team Order
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       CHECKOUT MODAL
+       ========================================================================== -->
+  <div class="modal-overlay" id="checkoutModal">
+    <div class="checkout-modal-card">
+      <button class="modal-close-btn" id="checkoutCloseBtn"><i class="fas fa-times"></i></button>
+
+      <div id="checkoutFormView">
+        <div class="checkout-header">
+          <span class="brand-logo-text" style="font-size: 1.4rem;">MARTIAL</span>
+          <h3 style="font-family: var(--font-heading); margin-top: 6px;">Complete Your Order</h3>
+          <p style="font-size: 0.8rem; color: var(--color-text-muted);">
+            Total: <strong id="checkoutTotalAmount">Rs. 0</strong> (<span id="checkoutItemsCount">0 items</span>)
+          </p>
+        </div>
+
+        <form id="checkoutForm">
+          <div style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; margin-bottom: 10px; color: var(--color-primary);">1. Shipping Address (Pakistan)</div>
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Full Name *" required>
+          </div>
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+            <div class="form-group">
+              <input type="email" class="form-control" placeholder="Email Address *" required>
+            </div>
+            <div class="form-group">
+              <input type="tel" class="form-control" placeholder="Mobile Phone (03XX-XXXXXXX) *" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <select class="form-control" required>
+              <option value="">Select Delivery City *</option>
+              <option value="Lahore">Lahore</option>
+              <option value="Karachi">Karachi</option>
+              <option value="Islamabad">Islamabad</option>
+              <option value="Rawalpindi">Rawalpindi</option>
+              <option value="Sialkot">Sialkot</option>
+              <option value="Faisalabad">Faisalabad</option>
+              <option value="Multan">Multan</option>
+              <option value="Peshawar">Peshawar</option>
+              <option value="Quetta">Quetta</option>
+              <option value="Other">Other City in Pakistan</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Street Address, Area, House / Apt #" required>
+          </div>
+
+          <div style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; margin: 18px 0 10px; color: var(--color-primary);">2. Select Payment Method</div>
+          <div class="payment-method-options">
+            <div class="payment-card-opt active">
+              <i class="fas fa-money-bill-wave"></i> Cash on Delivery (COD)
+            </div>
+            <div class="payment-card-opt">
+              <i class="fas fa-credit-card"></i> Credit / Debit Card
+            </div>
+            <div class="payment-card-opt">
+              <i class="fas fa-mobile-alt"></i> JazzCash / EasyPaisa
+            </div>
+            <div class="payment-card-opt">
+              <i class="fas fa-university"></i> Direct Bank Transfer
+            </div>
+          </div>
+
+          <button type="submit" class="btn-primary" style="width: 100%; justify-content: center; padding: 14px;">
+            Confirm &amp; Place Order <i class="fas fa-check" style="margin-left: 6px;"></i>
+          </button>
+        </form>
+      </div>
+
+      <!-- Success Confirmation View -->
+      <div id="checkoutSuccessView" style="display: none; text-align: center; padding: 30px 10px;">
+        <i class="fas fa-check-circle" style="font-size: 3.5rem; color: #108474; margin-bottom: 16px;"></i>
+        <h2 style="font-family: var(--font-heading); font-size: 1.8rem; margin-bottom: 8px;">Order Confirmed!</h2>
+        <p style="font-size: 0.9rem; color: #444; margin-bottom: 12px;">Thank you for shopping with Martial.</p>
+        <div style="background: #f7f7f7; padding: 12px; margin: 16px 0; font-weight: 700; font-size: 1rem;">
+          Order ID: <span id="orderNumText" style="color: var(--color-primary);">MTL-549102</span>
+        </div>
+        <p style="font-size: 0.8rem; color: #777; margin-bottom: 24px;">
+          Our customer service team will dispatch your parcel via express courier. A confirmation SMS has been sent to your phone.
+        </p>
+        <button class="btn-primary" onclick="location.reload()" style="margin: 0 auto;">Continue Shopping</button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       CUSTOM TEAM UNIFORM & GRAPHIC INQUIRY MODAL (WELLSTUFF B2B)
+       ========================================================================== -->
+  <div class="modal-overlay" id="customQuoteModal">
+    <div class="checkout-modal-card">
+      <button class="modal-close-btn" id="customQuoteCloseBtn"><i class="fas fa-times"></i></button>
+      <div class="checkout-header">
+        <span class="brand-logo-text" style="font-size: 1.3rem;">MARTIAL ATHLETICS</span>
+        <h3 style="font-family: var(--font-heading); margin-top: 6px;">Custom Team Kit &amp; B2B Quote</h3>
+        <p style="font-size: 0.8rem; color: var(--color-text-muted);">Manufactured directly at Wellstuff Industries Sialkot</p>
+      </div>
+
+      <form id="customQuoteForm">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Full Name *" required>
+        </div>
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Club / Team / Organization Name *" required>
+        </div>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+          <div class="form-group">
+            <input type="email" class="form-control" placeholder="Email Address *" required>
+          </div>
+          <div class="form-group">
+            <input type="tel" class="form-control" placeholder="Phone / WhatsApp *" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <input type="text" class="form-control" id="b2bProductRef" placeholder="Interested Sport or Garment (e.g. Basketball Uniforms, Rugby, Hoodies)">
+        </div>
+        <div class="form-group">
+          <input type="number" class="form-control" placeholder="Estimated Quantity (e.g. 15, 50, 100+)">
+        </div>
+        <div class="form-group">
+          <textarea class="form-control" rows="3" placeholder="Provide details on colors, logos, customization requirements..."></textarea>
+        </div>
+        <button type="submit" class="btn-primary" style="width: 100%; justify-content: center; padding: 14px;">
+          Submit Inquiry For Free 3D Mockup
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       FLOATING TOAST CONTAINER
+       ========================================================================== -->
+  <div class="toast-container" id="toastContainer"></div>
+
+  <!-- Products Dataset Script (works offline, file://, and HTTP server) -->
+  <script src="data/products.js"></script>
+
+  <!-- Core App Engine -->
+  <script src="js/app.js"></script>
+
+</body>
+</html>
